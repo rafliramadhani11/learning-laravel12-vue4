@@ -9,7 +9,7 @@ import ToggleTheme from "../components/ToggleTheme.vue";
         class="dark:border-zinc-700 dark:bg-zinc-900 bg-white border-b border-zinc-200"
     >
         <div
-            class="flex justify-between md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:mx-auto px-6 py-4 gap-x-5 items-center"
+            class="flex justify-between md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:mx-auto px-6 md:px-0 py-2 items-center"
         >
             <svg
                 width="30"

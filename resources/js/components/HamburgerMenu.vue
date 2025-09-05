@@ -40,7 +40,7 @@ const toggle = (event) => {
         :model="items"
         id="overlay_menu"
         popup
-        class="w-full max-w-full left-0 right-0 !border-none !rounded-none !mt-2 dark:!bg-zinc-900 !shadow-none"
+        class="w-full max-w-full left-0 right-0 !border-none !rounded-none !mt-2 dark:!bg-zinc-900"
     >
         <template #item="{ item, props }">
             <a v-bind="props.action" class="flex items-center !px-6 !gap-x-3">
