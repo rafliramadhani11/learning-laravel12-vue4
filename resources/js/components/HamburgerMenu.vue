@@ -32,6 +32,7 @@ const toggle = (event) => {
         icon="pi pi-bars"
         size="small"
         rounded
+        class="md:!hidden"
     />
 
     <Menu
@@ -42,7 +43,7 @@ const toggle = (event) => {
         class="w-full max-w-full left-0 right-0 !border-none !rounded-none !mt-2 dark:!bg-zinc-900 !shadow-none"
     >
         <template #item="{ item, props }">
-            <a v-bind="props.action" class="flex items-center !px-3 !gap-x-3">
+            <a v-bind="props.action" class="flex items-center !px-6 !gap-x-3">
                 <i :class="item.icon"></i>
                 <span class="text-sm">{{ item.label }}</span>
             </a>
