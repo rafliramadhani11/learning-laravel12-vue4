@@ -8,6 +8,8 @@ import { definePreset } from "@primeuix/themes";
 import Aura from "@primeuix/themes/aura";
 import PrimeVue from "primevue/config";
 
+import AnimateOnScroll from "primevue/animateonscroll";
+
 createInertiaApp({
     resolve: (name) => {
         const pages = import.meta.glob("./pages/**/*.vue", { eager: true });
@@ -71,6 +73,7 @@ createInertiaApp({
                     },
                 },
             })
+            .directive("animateonscroll", AnimateOnScroll)
             .mount(el);
     },
 });

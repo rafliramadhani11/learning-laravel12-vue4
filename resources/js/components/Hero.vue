@@ -3,7 +3,14 @@
         <div
             class="flex md:max-w-2xl lg:max-w-4xl xl:max-w-6xl md:mx-auto lg:flex lg:flex-row flex-col justify-center md:justify-normal h-full flex-1"
         >
-            <div class="relative flex-1 z-20 flex items-center justify-center">
+            <div
+                v-animateonscroll="{
+                    enterClass:
+                        'opacity-100 translate-y-0 transition-all duration-2500 ease-out',
+                    leaveClass: 'opacity-0 translate-y-10',
+                }"
+                class="relative flex-1 z-20 flex items-center justify-center"
+            >
                 <div class="flex items-center justify-center w-full h-full">
                     <div class="w-full text-center lg:text-left">
                         <h1
@@ -37,7 +44,14 @@
                 </div>
             </div>
 
-            <div class="absolute lg:relative inset-0 lg:inset-auto flex-1">
+            <div
+                v-animateonscroll="{
+                    enterClass:
+                        'opacity-100 translate-y-0 transition-all duration-2500 ease-out',
+                    leaveClass: 'opacity-0 translate-y-10',
+                }"
+                class="absolute lg:relative inset-0 lg:inset-auto flex-1"
+            >
                 <div
                     class="absolute lg:hidden inset-0 bg-zinc-900/50 backdrop-brightness-40 dark:backdrop-brightness-80 dark:bg-zinc-900/80 z-10"
                 />
